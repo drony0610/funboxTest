@@ -1,0 +1,175 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+  width: 100%;
+  min-height: 100vh;
+  background: url('img/Pattern.png') left/contain repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.appBody{
+  max-width: 1120px;
+  width: 100%;
+}
+.App h1{
+  color: white;
+  margin-top: 36px;
+  font-weight: 200;
+  font-size: 36px;
+  margin-bottom:24px
+}
+
+.appContent{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cardItem--standart{
+    --accent_color:#2EA8E6;
+    --slogan_color:#666666;
+}
+.cardItem--hovered{
+  --accent_color:#D91667;
+  --slogan_color:#D91667;
+}
+.cardItem--disabled{
+  --accent_color:#B3B3B3;
+  --slogan_color:#666666;
+}
+.cardItem{
+  flex-basis: 320px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.cardItemBody{
+  position: relative;
+  border-radius: 12px;
+  width: 100%;
+  min-height: 480px;
+  overflow: hidden;
+  padding: 21px 16px;
+}
+
+.cardContent{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  padding-left: 48px;
+  text-align: left;
+}
+
+.cardItem svg:first-of-type{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+.cardItem svg:last-of-type{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.cardCat{
+  background: url('img/cat.png') center/contain no-repeat;
+  width: 360px;
+  height: 360px;
+  display: block;
+  position: absolute;
+  bottom: -88px;
+  left: -24px;
+  z-index: 2;
+}
+
+
+.cardWeight{
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  background:var(--accent_color);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  color: white;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.cardWeigth-num{
+  font-size: 42px;
+  width: 100%;
+  line-height: 42px;
+}
+.cardWeight span:last-of-type{
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.cardSlogan{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--slogan_color);
+}
+.cardTitle{
+  font-family: 'Trebuchet MS';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+}
+.cardTaste{
+  font-family: 'Trebuchet MS';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 15px;
+}
+
+.cardPortion, .cardGift, .cardGiftExtra{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #666666;
+}
+
+.cardItemFooter{
+  margin-top: 14px;
+ color: white;
+}
+.cardItemFooter p{
+  color: var(--accent_color);
+  text-decoration: underline;
+  display: inline;
+  cursor: pointer;
+}
+
+.disableBtn{
+    position: fixed;
+    width: 100px;
+    height: 80px;
+    top:10px;
+    left:10px;
+}
